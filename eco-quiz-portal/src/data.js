@@ -1,0 +1,55 @@
+export const CATS=[
+{id:'climate',name:'Climate Change',icon:'🌍',desc:'Greenhouse gases, warming and what we can do.',diff:'Medium',g:'from-orange-500/70 to-rose-800/70'},
+{id:'recycling',name:'Recycling & Waste',icon:'♻️',desc:'Sort, reuse and cut what ends up in landfill.',diff:'Easy',g:'from-lime-500/70 to-green-800/70'},
+{id:'living',name:'Sustainable Living',icon:'🌱',desc:'Everyday habits with a lighter footprint.',diff:'Easy',g:'from-emerald-500/70 to-teal-800/70'},
+{id:'water',name:'Water Conservation',icon:'💧',desc:'Protect every drop, at home and beyond.',diff:'Medium',g:'from-sky-500/70 to-blue-800/70'},
+{id:'energy',name:'Renewable Energy',icon:'⚡',desc:'Sun, wind, hydro and the clean grid.',diff:'Hard',g:'from-yellow-500/70 to-amber-800/70'},
+{id:'forest',name:'Forest & Biodiversity',icon:'🌳',desc:'Ecosystems, species and why they matter.',diff:'Medium',g:'from-green-600/70 to-emerald-900/70'},
+{id:'ocean',name:'Ocean Conservation',icon:'🌊',desc:'Coral, plastics and life beneath the waves.',diff:'Medium',g:'from-cyan-500/70 to-indigo-900/70'},
+{id:'cities',name:'Green Cities',icon:'🏙️',desc:'Transit, green roofs and low-carbon design.',diff:'Hard',g:'from-slate-500/70 to-teal-900/70'}];
+const q=(a,b,c,d)=>[a,b,c,d];
+export const Q={
+climate:[q('Which gas is the largest human-caused driver of global warming?',['Oxygen','Carbon dioxide','Nitrogen','Helium'],1,'CO₂ from burning fossil fuels is the biggest contributor to the enhanced greenhouse effect.'),
+q('The Paris Agreement aims to limit warming to well below…',['1°C','2°C','4°C','6°C'],1,'Nations agreed to hold warming well below 2°C and pursue 1.5°C.'),
+q('Which sector is a major source of global emissions?',['Electricity & heat','Libraries','Bird watching','Hand-loom weaving'],0,'Electricity and heat generation is among the largest emitting sectors.'),
+q('What is a "carbon sink"?',['A kitchen drain','Something absorbing more carbon than it emits','A coal mine','A factory filter'],1,'Forests, soils and oceans absorb carbon and act as natural sinks.')],
+recycling:[q('What is the most effective way to reduce household plastic waste?',['Recycle everything','Avoid single-use items','Burn it','Buy more bags'],1,'Reducing and reusing beats recycling: waste never created needs no processing.'),
+q('Which item is generally NOT recyclable curbside?',['Glass bottle','Aluminium can','Greasy pizza box','Cardboard'],2,'Food grease contaminates paper fibres, so soiled cardboard is usually rejected.'),
+q('The order of the waste hierarchy starts with…',['Recycle','Reduce','Dispose','Recover'],1,'Reduce, reuse, recycle — in that priority order.'),
+q('Food scraps are best turned into…',['Compost','Plastic','Fuel oil','Glass'],0,'Composting returns nutrients to soil and avoids methane from landfills.')],
+living:[q('Which habit saves the most energy at home?',['LED bulbs','Leaving TV on','Longer showers','Open fridge'],0,'LEDs use up to 80% less energy than incandescent bulbs.'),
+q('A "reusable first" mindset means…',['Buy disposable','Choose items you can use many times','Throw sooner','Avoid repairing'],1,'Durable, reusable goods cut resource use over time.'),
+q('Which diet change generally lowers your footprint?',['More plant-based meals','More air-freighted food','More packaging','Wasting food'],0,'Plant-rich diets typically need less land, water and energy.'),
+q('Unplugging idle chargers helps avoid…',['Standby power use','Rain','Noise','Pollen'],0,'Devices draw "vampire" power even when idle.')],
+water:[q('Roughly what share of Earth’s water is fresh and accessible?',['Under 1%','25%','50%','75%'],0,'Most water is salty or frozen; accessible fresh water is well under 1%.'),
+q('Which saves the most water?',['Fixing leaks','Longer showers','Running taps','Hosing the driveway'],0,'A dripping tap can waste thousands of litres per year.'),
+q('Rainwater harvesting is…',['Collecting rain for later use','Making rain','Pumping seawater','Cloud seeding'],0,'Captured rain can water gardens and recharge groundwater.'),
+q('Drip irrigation is efficient because it…',['Delivers water at the roots','Sprays widely','Floods fields','Uses more water'],0,'It cuts evaporation and runoff.')],
+energy:[q('Which is a renewable energy source?',['Coal','Wind','Natural gas','Diesel'],1,'Wind, solar, hydro and geothermal naturally replenish.'),
+q('Solar panels convert sunlight into…',['Electricity','Wind','Rain','Sound'],0,'Photovoltaic cells generate electric current from light.'),
+q('Which unit measures electrical energy used?',['kWh','Kg','Litre','Pascal'],0,'Kilowatt-hours are shown on electricity bills.'),
+q('A major challenge for solar and wind is…',['Intermittency','Cost of sunlight','Too much oil','No turbines'],0,'Output varies, so storage and grids need to adapt.')],
+forest:[q('Why are forests vital for climate?',['They store carbon','They make oil','They create plastic','They block wind only'],0,'Trees absorb CO₂ and store it in biomass and soil.'),
+q('Biodiversity means…',['Variety of life','Number of trees only','Type of soil','Amount of rain'],0,'It covers genes, species and ecosystems.'),
+q('Deforestation mainly drives…',['Habitat loss','More species','Cooler climate','Cleaner rivers'],0,'Clearing forest destroys habitat and releases carbon.'),
+q('A keystone species is one that…',['Has a huge effect on its ecosystem','Is the largest','Is the rarest','Lives in caves'],0,'Remove it and the ecosystem can change dramatically.')],
+ocean:[q('Which is a major threat to marine life?',['Plastic pollution','Clean currents','Seaweed','Moonlight'],0,'Millions of tonnes of plastic enter oceans yearly.'),
+q('Coral bleaching is mainly caused by…',['Warming water','Cold snaps','Fishing nets only','Sand'],0,'Heat stress makes corals expel their symbiotic algae.'),
+q('Mangroves help coasts by…',['Buffering storms and storing carbon','Raising sea level','Producing oil','Blocking fish'],0,'They protect shorelines and are rich carbon sinks.'),
+q('Overfishing means…',['Catching fish faster than they reproduce','Fishing at night','Using nets','Eating fish'],0,'Stocks collapse when harvest outpaces regrowth.')],
+cities:[q('Which transport has the lowest emissions per trip?',['Cycling','Private jet','Single-occupant car','Helicopter'],0,'Walking and cycling produce almost no direct emissions.'),
+q('A green roof helps a city by…',['Cooling buildings & absorbing rain','Adding noise','Raising heat','Blocking sun for solar'],0,'Vegetation insulates and slows stormwater.'),
+q('The "urban heat island" effect is caused by…',['Concrete and lack of vegetation','Too many trees','Cold rivers','Snow'],0,'Dark surfaces absorb heat; trees and water cool cities.'),
+q('Compact, walkable neighbourhoods reduce…',['Car dependence','Parks','Libraries','Sidewalks'],0,'Mixed-use planning shortens trips and cuts emissions.')]};
+export const TOPICS=[
+{id:'climate',icon:'🌍',name:'Climate Change',g:'from-orange-400 to-rose-700',short:'Why our planet is warming and how we respond.',facts:['CO₂ is ~50% higher than pre-industrial levels','Last decade was the warmest on record'],body:'Burning coal, oil and gas traps heat in the atmosphere. Cutting emissions, protecting forests and adapting infrastructure are the three pillars of climate action.'},
+{id:'recycling',icon:'♻️',name:'Recycling',g:'from-lime-400 to-green-700',short:'Keep materials in use and out of landfill.',facts:['Recycling aluminium saves ~95% of the energy','Only ~9% of plastic ever made was recycled'],body:'Rinse containers, keep materials clean and learn local sorting rules. Remember: reduce and reuse come first.'},
+{id:'living',icon:'🌱',name:'Sustainable Living',g:'from-emerald-400 to-teal-700',short:'Small choices that add up.',facts:['A third of food produced is wasted','LEDs last up to 25× longer'],body:'Plan meals, repair before replacing, switch to efficient appliances and choose low-carbon transport where you can.'},
+{id:'energy',icon:'⚡',name:'Clean Energy',g:'from-yellow-400 to-amber-700',short:'Power that doesn’t cost the Earth.',facts:['Solar is now among the cheapest electricity','Wind turbines can power thousands of homes'],body:'Solar, wind and hydro generate power with minimal emissions. Batteries and smart grids help balance supply.'},
+{id:'water',icon:'💧',name:'Water Conservation',g:'from-sky-400 to-blue-700',short:'Every drop counts.',facts:['A leaking tap can waste 10,000+ L a year','Agriculture uses ~70% of freshwater'],body:'Fix leaks, shorten showers, mulch gardens and harvest rainwater to reduce pressure on rivers and aquifers.'},
+{id:'forest',icon:'🌳',name:'Biodiversity',g:'from-green-500 to-emerald-900',short:'The web of life that sustains us.',facts:['~1 million species face extinction risk','Forests host most land species'],body:'Healthy ecosystems purify water, pollinate crops and stabilise climate. Protect habitats and buy responsibly sourced products.'}];
+export const CHALLENGES=[
+{id:'bottle',icon:'🚰',t:'Carry a reusable water bottle today'},{id:'plastic',icon:'🛍️',t:'Avoid single-use plastic'},
+{id:'lights',icon:'💡',t:'Switch off unused lights'},{id:'transit',icon:'🚌',t:'Use public transport or walk'},
+{id:'tree',icon:'🌳',t:'Plant a tree or sapling'},{id:'water',icon:'🚿',t:'Save water: 5-minute shower'},{id:'recycle',icon:'♻️',t:'Recycle household waste properly'}];
+export const MOCK_USERS=[['Aarav S.',3120,34],['Meera K.',2990,31],['Kabir D.',2870,29],['Ananya R.',2760,27],['Rohan P.',2710,26],['Ishita M.',2650,25],['Vikram T.',2590,24],['Sneha B.',2540,23],['Arjun N.',2500,22],['Diya C.',2470,21],['Karthik V.',2420,20]];
